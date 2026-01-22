@@ -1,0 +1,1 @@
+This website is my personal portfolio, created to showcase my skills, projects, and experiences while also highlighting my goals and aspirations for the future. It represents my growth as a developer and serves as a space where I can share my work, track my progress, and build a professional online presence as I continue learning and evolving in web development.
