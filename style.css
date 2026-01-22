@@ -1,0 +1,306 @@
+/* Background: white -> navy gradient */
+body {
+    background: linear-gradient(180deg, #ffffff 0%, #001f3f 100%);
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    color: #001f3f;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure hero spans full width and center its content */
+.hero {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center horizontally */
+    padding-left: 0;
+}
+
+/* Centered card */
+.container {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    max-width: 780px;
+    margin: 0 auto; /* ensure the card centers reliably */
+    box-shadow: 0 10px 30px rgba(1, 31, 63, 0.15);
+    text-align: center;
+}
+
+h1 {
+    color: #001f3f;
+    font-size: 2.6rem;
+    margin: 0 0 1rem 0;
+}
+
+.overview {
+    color: #003244;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 1.5rem 0;
+}
+
+/* Button */
+.actions { display:flex; gap:0.75rem; justify-content:center; flex-wrap:wrap; margin-bottom:0.5rem; }
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #001f3f 0%, #00305a 100%);
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 16, 48, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    h1 { font-size: 1.8rem; }
+    .overview { font-size: 0.98rem; }
+}
+
+/* Image styles for sports page */
+.sport-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.sport-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.sport-figure figcaption {
+    font-size: 0.9rem;
+    color: #003244;
+    margin-top: 0.5rem;
+}
+.netball-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.netball-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.u18-basketball-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.u18-basketball-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+/*end of sports pic*/
+
+/* Courses button */
+.btn--courses {
+    background: linear-gradient(90deg, #0066a3, #004a7a);
+    color: #fff;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn--courses:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,64,128,0.15);
+}
+
+/* Header styles */
+.site-header {
+  background: #001f3f;
+  color: #ffffff;
+}
+.site-header .container {  background: transparent;  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header .logo img { height: 40px; display: block; }
+.site-header .logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.main-nav a {
+  color: inherit;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.main-nav a:hover { text-decoration: underline; }
+
+/* Figure for AI course image */
+.AI-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.AI-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.ivy-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.ivy-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.gen-ai-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.gen-ai-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+/* Figure for AI course image */
+.ses-hackathon-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.ses-hackathon-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.jr-hackathon-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.jr-hackathon-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.dear-diary-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.dear-diary-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.ransomware-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.ransomware-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.NYUAD-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.NYUAD-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.UniT-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.UniT-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.UniW-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.UniW-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
+.GTech-figure {
+    margin: 1.25rem 0;
+    text-align: center;
+}
+.GTech-figure img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    margin: 0.5rem auto 0;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,16,48,0.12);
+}
